@@ -1,7 +1,7 @@
 require 'socket'
 require 'puppet/face'
 require 'resolv'
-require 'aws-sdk'
+require 'aws/s3'
 
 module Puppet::Parser::Functions
   newfunction(:get_instances, :type => :rvalue) do |args|
